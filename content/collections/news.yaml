@@ -1,0 +1,18 @@
+title: 'News Articles'
+template: news/show
+layout: layout
+mount: 626260d4-968d-420d-a8b1-a96355ae83cf
+taxonomies:
+  - tags
+revisions: false
+route: '/{mount}/{slug}'
+date: true
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: true

@@ -1,0 +1,9 @@
+name: Mark
+super: true
+avatar: mark-and-coffe.jpg
+id: e65fd285-38ae-41a4-b4c4-abc62b933b38
+password_hash: $2y$10$NRBJ5i56WTQGYu2JMX8CKuImAkWe9FhjfRgYUUMmVIq3iVfXdYcTG
+preferences:
+  assets:
+    assets:
+      mode: grid

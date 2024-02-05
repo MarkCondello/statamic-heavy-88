@@ -1,0 +1,17 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* @import "./site.css"; / // not importing site.css *
+
+/* body {
+  outline: 10px solid #fab;
+} */
+
+.hero p {
+  @apply text-[32px] tracking-tight leading-tight max-w-4xl text-gray-500 mt-12;
+}
+
+.hero p strong {
+  @apply font-bold text-white;
+} 
