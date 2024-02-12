@@ -1,1 +1,13 @@
-{  }
+tree:
+  -
+    id: f1bc60f6-a295-4695-9f3f-34e5d16f66ea
+    title: 'Cool things'
+    url: 'https://ugmug.com'
+    data:
+      external: true
+  -
+    id: b90c5529-c30a-4633-a107-0ef9d0dd50bf
+    title: 'Cool CMS'
+    url: 'https://statamic.com'
+    data:
+      external: true
