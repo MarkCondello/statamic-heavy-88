@@ -7,3 +7,9 @@ preferences:
   assets:
     assets:
       mode: grid
+  forms:
+    contact:
+      columns:
+        - datestamp
+        - email
+        - name
