@@ -51,3 +51,27 @@ tabs:
               hide_display: false
               validate:
                 - required
+          -
+            handle: zip_code
+            field:
+              type: integer
+              display: 'Zip Code'
+              icon: integer
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: wealth
+            field:
+              type: integer
+              display: Wealth
+              icon: integer
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              if:
+                zip_code: 'equals 90210'
