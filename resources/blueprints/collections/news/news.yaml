@@ -53,6 +53,106 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
+              sets:
+                quote:
+                  display: Quote
+                  instructions: null
+                  icon: null
+                  sets:
+                    quote:
+                      display: Quote
+                      instructions: null
+                      icon: null
+                      fields:
+                        -
+                          handle: content
+                          field:
+                            buttons:
+                              - bold
+                              - italic
+                              - unorderedlist
+                              - orderedlist
+                              - removeformat
+                              - quote
+                              - anchor
+                            smart_typography: false
+                            save_html: true
+                            inline: false
+                            toolbar_mode: floating
+                            reading_time: false
+                            word_count: false
+                            fullscreen: true
+                            allow_source: true
+                            enable_input_rules: true
+                            enable_paste_rules: true
+                            remove_empty_nodes: false
+                            antlers: false
+                            link_noopener: true
+                            link_noreferrer: true
+                            target_blank: true
+                            always_show_set_button: false
+                            collapse: false
+                            previews: true
+                            type: bard
+                            display: Content
+                            icon: bard
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: author
+                          field:
+                            input_type: text
+                            antlers: false
+                            type: text
+                            display: Author
+                            icon: text
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                    related_articles:
+                      display: 'Related Articles'
+                      instructions: null
+                      icon: null
+                      fields:
+                        -
+                          handle: related_entries
+                          field:
+                            mode: default
+                            create: false
+                            collections:
+                              - news
+                            type: entries
+                            display: 'Related Entries'
+                            icon: entries
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                    embed:
+                      display: Embed
+                      instructions: null
+                      icon: null
+                      fields:
+                        -
+                          handle: embed_template
+                          field:
+                            hide_partials: false
+                            blueprint: false
+                            folder: partials
+                            type: template
+                            display: 'Embed Template'
+                            icon: template
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
           -
             handle: author
             field:
@@ -103,4 +203,12 @@ tabs:
               default: now
               validate:
                 - required
+          -
+            handle: tags
+            field:
+              type: terms
+              taxonomies:
+                - tags
+              display: Tags
+              mode: select
 title: 'News Article'

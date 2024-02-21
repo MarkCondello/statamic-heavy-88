@@ -20,3 +20,4 @@
     {{ /form:contact }}
     </section>
 </article>
+<!-- This form example loops through the fields set in the CMS and uses Alpine for the front end logic -->
