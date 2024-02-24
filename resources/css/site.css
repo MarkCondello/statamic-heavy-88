@@ -1,7 +1,7 @@
 /* This is all you. */
-body {
+/* body {
   outline: 10px solid red;
-}
+} */
 [x-cloak] {
   display: none !important;
 }
